@@ -13,13 +13,20 @@ import javax.swing.JFrame;
  */
 public class VentanaPrincipal extends JFrame{
     
-    // Tamaño de la ventana
+    // Tamaño de la ventana. Constantes
     public static final int ANCHO_FRAME = 600;
     public static final int ALTO_FRAME = 200;
+   
+    // Atributos
+    private Panel panel;
     
     // Constructor de la clase 
     public VentanaPrincipal(){
         crearVentana();
+        // Incializa el atributo de tipo Panel
+        panel = new Panel();
+        // Añade el panel a la ventana
+        this.add(panel);
     }
     
     

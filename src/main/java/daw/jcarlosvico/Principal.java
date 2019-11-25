@@ -5,11 +5,6 @@
  */
 package daw.jcarlosvico;
 
-import static javax.swing.WindowConstants.*;
-
-
-
-
 /**
  *
  * @author jfervic933
