@@ -30,9 +30,19 @@ public class Panel extends JPanel{
     
     // Constructor 
     public Panel(){
+        // Establece el layout del panel
         this.setLayout(new FlowLayout());
+        // Establece el color del fondo del panel
         this.setBackground(Color.gray);
+        // Establece el tamaño del panel
         this.setSize(ANCHO_PANEL, ALTO_PANEL);
+        inicializarComponentes();
+    }
+    
+    private void inicializarComponentes(){
+        // Añade URL Label
+        lblUrl = new JLabel("Introduce el texto: ");
+        this.add(lblUrl);
     }
     
 }
