@@ -17,6 +17,12 @@ public class VentanaPrincipal extends JFrame{
     public static final int ANCHO_FRAME = 600;
     public static final int ALTO_FRAME = 200;
     
+    // Constructor de la clase 
+    public VentanaPrincipal(){
+        crearVentana();
+    }
+    
+    
     // Método privado para inicializar el JFrame
     private void crearVentana(){
         // Posición y tamaño del JFrame
@@ -28,6 +34,8 @@ public class VentanaPrincipal extends JFrame{
         // Comportamiento al cerrar la ventana
         // Terminar el programa
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        // Hace visible la ventana
+        this.setVisible(true);
     }
     
 }
