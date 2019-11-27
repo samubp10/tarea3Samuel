@@ -27,6 +27,8 @@ public class VentanaPrincipal extends JFrame{
         panel = new Panel();
         // Añade el panel a la ventana
         this.add(panel);
+        // Cuando todos los elementos están creados se hace visible la ventana
+        this.setVisible(true);
     }
     
     
@@ -41,8 +43,6 @@ public class VentanaPrincipal extends JFrame{
         // Comportamiento al cerrar la ventana
         // Terminar el programa
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        // Hace visible la ventana
-        this.setVisible(true);
     }
     
 }
