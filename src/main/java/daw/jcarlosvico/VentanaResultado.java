@@ -19,7 +19,7 @@ public class VentanaResultado extends JFrame {
 
     // Este constructor recibe el fichero que contiene 
     // el QR, lo establece en el JLabel y se muestra
-    public FrameResultado(String fichero) {
+    public VentanaResultado(String fichero) {
         // Se crea un objeto imagen a partir del fichero del QR
         ImageIcon icono = new ImageIcon(fichero);
         // Título del frame
