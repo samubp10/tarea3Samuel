@@ -72,7 +72,7 @@ public class Panel extends JPanel {
                     // Genera el fichero con la imagen del QR
                     // El fichero se genera en la raíz del proyecto
                     QR.escribirQR(tfUrl.getText(), tfFichero.getText(), "png");
-                    JOptionPane.showMessageDialog(null, "Código generado");
+                    new VentanaResultado(tfFichero.getText());
                 } else {
                     JOptionPane.showMessageDialog(null, "No puede haber campos vacíos.");
                 }
