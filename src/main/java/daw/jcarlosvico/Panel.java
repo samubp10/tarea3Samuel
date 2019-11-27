@@ -11,6 +11,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
@@ -63,7 +64,20 @@ public class Panel extends JPanel {
         btnGenerar = new JButton("Generar código QR");
         this.add(btnGenerar);
         // Comportamiento del botón generar
-        
+        btnGenerar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                // Si el contenido de los textField no está vacío
+                if (!tfUrl.getText().isEmpty()&&!tfFichero.getText().isEmpty()){
+                    // Genera el fichero con la imagen del QR
+                    // El fichero se genera en la raíz del proyecto
+                    QR.escribirQR(tfUrl.getText(), tfFichero.getText(), "png");
+                    JOptionPane.showMessageDialog(null, "Código generado");
+                } else {
+                    JOptionPane.showMessageDialog(null, "No puede haber campos vacíos.");
+                }
+            }
+        });
         // Añade botón cerrar
         btnCerrar = new JButton("Salir");
         this.add(btnCerrar);
