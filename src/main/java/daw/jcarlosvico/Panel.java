@@ -7,6 +7,8 @@ package daw.jcarlosvico;
 
 import java.awt.Color;
 import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -60,10 +62,18 @@ public class Panel extends JPanel {
         // Añade el botón generar
         btnGenerar = new JButton("Generar código QR");
         this.add(btnGenerar);
-
+        // Comportamiento del botón generar
+        
         // Añade botón cerrar
         btnCerrar = new JButton("Salir");
         this.add(btnCerrar);
+        // Comportamiento del botón Cerrar
+        btnCerrar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                System.exit(0);
+            }
+        });
     }
 
 }
