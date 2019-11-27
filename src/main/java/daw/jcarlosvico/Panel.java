@@ -43,6 +43,19 @@ public class Panel extends JPanel{
         // Añade URL Label
         lblUrl = new JLabel("Introduce el texto: ");
         this.add(lblUrl);
+        
+        // Añade área de texto para la URL
+        // Ancho de unos 40 caracteres aprox
+        tfUrl = new JTextField(40);
+        this.add(tfUrl);
+        
+        // Añade Fichero Label
+        lblFichero = new JLabel("Nombre del fichero: ");
+        this.add(lblFichero);
+        
+        // Añade área de texto para el nombre del fichero
+        tfFichero = new JTextField(10);
+        this.add(tfFichero);
     }
     
 }
