@@ -36,7 +36,7 @@ public class Panel extends JPanel {
         // Establece el layout del panel
         this.setLayout(new FlowLayout());
         // Establece el color del fondo del panel
-        this.setBackground(Color.gray);
+        this.setBackground(Color.blue);
         // Establece el tamaño del panel
         this.setSize(ANCHO_PANEL, ALTO_PANEL);
         inicializarComponentes();

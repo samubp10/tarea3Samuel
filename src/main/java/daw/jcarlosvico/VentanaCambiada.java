@@ -11,7 +11,7 @@ import javax.swing.JFrame;
  *
  * @author jfervic933
  */
-public class VentanaPrincipal extends JFrame{
+public class VentanaCambiada extends JFrame{
     
     // Tamaño de la ventana. Constantes
     public static final int ANCHO_FRAME = 600;
@@ -21,7 +21,7 @@ public class VentanaPrincipal extends JFrame{
     private Panel panel;
     
     // Constructor de la clase 
-    public VentanaPrincipal(){
+    public VentanaCambiada(){
         crearVentana();
         // Incializa el atributo de tipo Panel
         panel = new Panel();
